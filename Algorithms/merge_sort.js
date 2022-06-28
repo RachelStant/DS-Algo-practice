@@ -11,6 +11,9 @@ const mergeArrays = (nums1, m, nums2, n) => {
     // Sort nums1 in ascending order
     nums1.sort((a,b) => a - b)
     
+
+    //Quicker edit 
+    // nums1.splice(m, n, ...nums2)
 }
 
 mergeArrays([1,2,3,0,0,0], 3, [2,5,6], 3)
