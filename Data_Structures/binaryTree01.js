@@ -11,14 +11,14 @@ class TreeNode {
 }
 
 
-const preorderTraversal = (root) => {
+var preorderTraversal = (root) => {
     let result = [];
     preOrder(root, result);
     return result;
 }
 
 function preOrder(root, result) {
-    if (root === null) return
+    if (root === null) return [];
 
     result.push(root.val);
 
@@ -26,5 +26,5 @@ function preOrder(root, result) {
     root.left = preOrder(root.left, result);
 
     //visit right subtree
-    root.right = preOrder(root.right, result);
+    root.right = preOrder(root.right, result); 
 }
